@@ -5,17 +5,17 @@ calc = Calculadora()
 
 def calcular(operacion):
     try:
-        a = float(entrada_a.get())
-        b = float(entrada_b.get())
+        x = float(entrada_a.get())
+        y = float(entrada_b.get())
 
         if operacion == "sumar":
-            resultado = calc.sumar(a, b)
+            resultado = calc.sumar(x, y)
         elif operacion == "restar":
-            resultado = calc.restar(a, b)
+            resultado = calc.restar(x, y)
         elif operacion == "multiplicar":
-            resultado = calc.multiplicar(a, b)
+            resultado = calc.multiplicar(x, y)
         elif operacion == "dividir":
-            resultado = calc.dividir(a, b)
+            resultado = calc.dividir(x, y)
 
         etiqueta_resultado.config(text=f"Resultado: {resultado}")
 
